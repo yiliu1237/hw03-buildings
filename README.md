@@ -9,7 +9,8 @@ This project presents a procedural building generator designed to create customi
 - Dimensions of the roof
 - Stone decorations and other architectural details
 
-By adjusting these parameters, the generator creates diverse and unique building designs.
+By adjusting these parameters, the generator creates diverse and unique building designs. This project was developed as part of the coursework for CIS5660, focusing on creating a procedural building generator with customizable features. This generator empowers the creation of multi-floor structures with highly adjustable architectural details, emphasizing flexibility and creativity in procedural content design.
+
 
 ## Features
 
@@ -26,11 +27,10 @@ This project utilizes nodes from SideFX Labs. It is essential to install SideFX 
 The design of the buildings draws inspiration from medieval-style watchtowers, known for their tall, narrow structures and intricate stonework. These elements serve as a strong foundation for procedural techniques and provide extensive opportunities for customization.
 
 ### Reference Art
+The design is inspired by old European houses illustrated by Juliautumn.
 
-The design is inspired by old European houses created by Juliautumn. Additional references include:
+![Procedural Building Reference Art](./houses_sample.png)
 
-- [ISOBuilding Concept Art](https://www.behance.net/gallery/23773965/ISOBuilding-concept-art)
-- [Simon Houdini Procedural House Tutorial](https://www.youtube.com/watch?v=uIe97023sDk&t=979s&ab_channel=SimonHoudini)
 
 ## Development Process
 
@@ -49,11 +49,12 @@ To enhance the aesthetic and functionality of the buildings, additional models f
 Decorative elements such as stone trims and adjustable roofs were also integrated, ensuring a cohesive architectural style.
 
 ## Demonstration
+
 A video demonstration showcasing the procedural building generator in action is available to illustrate its capabilities.
 
+![Procedural Building Demonstration](./video1324790126_1.gif)
 
-
-
+![Procedural Building Demonstration 2](./video1324790126_2.gif)
 
 
 ## References
