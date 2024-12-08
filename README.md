@@ -1,54 +1,63 @@
-# CIS 5660 HW03 Procedural Buildings
+# Procedural Buildings
 
 ## Project Overview
-In this homework you’ll gain more experience with tool creation and loops. The core of this homework will be following a Procedural House tutorial to create a multi-floor building generator. The tutorial is linked here: 
-https://www.youtube.com/watch?v=uIe97023sDk&t=979s&ab_channel=SimonHoudini 
+This project presents a procedural building generator designed to create customizable multi-floor structures. The generator provides flexibility in architectural design by allowing control over key attributes such as:
 
-## Part 0: Setup and Planning 
-### SideFX Labs 
-The tutorial requires some nodes from SideFX Labs. If you haven’t already installed it, you can do so at the “Labs/Packages” tab of the Houdini Launcher.  
+- Number of floors
+- Number and placement of windows and doors
+- Height, width, and length of the building
+- Dimensions of the roof
+- Stone decorations and other architectural details
 
-### Project Planning
-Before you begin on this project, skim through the tutorial and then pick a building type/style you’d like to emulate (either from photos or concept art). You should watch the entirety of the tutorial  before committing to a style so you can pick something that is manageable and will be achievable using the techniques in the tutorial.  
-Of course, you’re welcome to adapt the setup to support additional logic/features to match your style, and particularly complex additions could merit extra credit :) On the other hand, if you’re newer to Houdini and want to stick relatively close to the tutorial, that’s okay too. Just be sure to think through what changes your chosen buildings will require (additional assets? different placement logic?) before diving into the project so you don’t bite off more than you can chew.  
-Make sure the include the reference you select in your README, and don’t forget to credit your sources.  
-Here are a few examples of possible building styles that could be a decent fit for inspiration:
-CIS 5660 HW03 Procedural Building 1 
-https://www.behance.net/gallery/23773965/ISOBuilding-concept-art 
+By adjusting these parameters, the generator creates diverse and unique building designs.
 
-https://polycount.com/discussio 
-low-poly-building
-https://www.artstation.com/artwork/m6xYy 
+## Features
 
-## Part 1: Box Stacking HDA
-First, start by following the tutorial to make a simple HDA that stacks boxes on each other.  Important note about HDA creation:  
-Creating an HDA saves a .hda file at the location you specify with the definition of your HDA. Be sure to submit this .hda file along with your .hip file so we can see the contents of your tool.  
-Alternatively, when you save your HDA you can choose the “Embedded in HIP File” option (rather than specifying the path), and the hda definition will be automatically embedded in your hip file (and no additional files will be needed with submission).  
+- **Multi-Floor Generation**: Buildings are generated with procedurally stacked floors, offering customizable layouts and dimensions.
+- **Customizable Windows and Doors**: The number, size, and style of windows and doors can be adjusted to fit various design requirements.
+- **Dynamic Roof Adjustments**: The roof's height, width, and slope can be modified, allowing for diverse architectural profiles.
+- **Stone Decorations**: Stone trims and decorative elements can be added, with customizable dimensions and placements to enhance visual appeal.
+- **Interactive Parameters**: A user-friendly parameter interface enables adjustments to various features, encouraging experimentation with different designs.
 
-## Part 2: Add Details
-Next, Simon adds details to the boxes to create floors by refiing the shape and adding details like windows, doors, and balconies.  
-Create your own models for windows, doors, and balconies based on your chosen style using Houdini. For each of the three types, create a Null “control” node with parameters that affect your window/door/balcony output (similar to how we made a control node for the jellyfish).  
-You should have parameters to drive the width and height of the doors, windows, and balconies, as well as at least one other parameter of your choosing on each one (ex: double vs single doors, windows with and without shutters, and type of balcony railing). Apart from that, you can go as simple or complex as you like!  
-Then follow Simon’s setup to integrate your windows, doors, and balconies into your buildings.  
-CIS 5660 HW03 Procedural Building 2 
+## Setup and Planning
 
-## Part 3: Pillars and Border
-Continue following the tutorial to add pillars and borders to each floor. 
+This project utilizes nodes from SideFX Labs. It is essential to install SideFX Labs from the "Labs/Packages" tab in the Houdini Launcher before starting. 
 
-## Part 4: Supports
-Continue following the tutorial to add supports to floors that overhang other floors.  
-(Optional) Extra Credit 
-Throughout the tutorial, Simon mentions ways you could extend his project setup. Implement any of his suggestions: 
-More complex logic for creating supports (handle different length supports differently) Add more parameters to the user interface (for example, x and z offset options) UV and shade your models 
-Add a “manual node” where users can control detail placement manually 
-Add additional types of feature models (like fire escapes or chimneys). Note that, depending on what you choose, you might need to add new logic to integrate them into your building (ex: chimneys go on top instead of being chained on the side, fire escapes should be on one side of the building and go all the way down). We’ll award more extra credit accordingly.  
-Add some flair to your scene by dressing together multiple buildings or additional procedural props or background elements 
-Render your scene 
+The design of the buildings draws inspiration from medieval-style watchtowers, known for their tall, narrow structures and intricate stonework. These elements serve as a strong foundation for procedural techniques and provide extensive opportunities for customization.
 
-## Submission
-Update your README with 
-A description of your project 
-A video of your building tool in action 
-Create a pull request to this repository 
-Submit your Houdini file to Canvas along with a link to your pull request 
-IMPORTANT NOTE: make sure your HDA is either embedded in the HIP file or included with your submission (see the instructions under “Part 1: Box Stacking HDA” for additional details).
+### Reference Art
+
+The design is inspired by old European houses created by Juliautumn. Additional references include:
+
+- [ISOBuilding Concept Art](https://www.behance.net/gallery/23773965/ISOBuilding-concept-art)
+- [Simon Houdini Procedural House Tutorial](https://www.youtube.com/watch?v=uIe97023sDk&t=979s&ab_channel=SimonHoudini)
+
+## Development Process
+
+The development process began with the creation of an HDA (Houdini Digital Asset) that stacks boxes procedurally to form the building's basic structure. The HDA includes parameters for controlling:
+
+- Number of floors
+- Height, width, and length of the building
+
+The procedural stacking approach ensures consistency and flexibility in generating the core structure.
+
+To enhance the aesthetic and functionality of the buildings, additional models for windows, doors, and balconies were created in Houdini. Each model includes a control node with adjustable parameters, allowing users to:
+
+- Modify window and door dimensions
+- Add and customize balconies
+
+Decorative elements such as stone trims and adjustable roofs were also integrated, ensuring a cohesive architectural style.
+
+## Demonstration
+A video demonstration showcasing the procedural building generator in action is available to illustrate its capabilities.
+
+
+
+
+
+
+## References
+
+1. [Simon Houdini Procedural House Tutorial](https://www.youtube.com/watch?v=uIe97023sDk&t=979s&ab_channel=SimonHoudini)
+2. [ISOBuilding Concept Art](https://www.behance.net/gallery/23773965/ISOBuilding-concept-art)
+
